@@ -5,29 +5,80 @@ ul {
 }
 
 li {
-    float: left;
+    display: inline;
 }
 
 a:link {
-    display: block;
     padding: 14px 16px;
     text-decoration: none;
-    color: red;
-    background-color: black;
+    color: dimgrey;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    border:none;
 }
 
 a:visited {
-    color: white;
+    color: slategrey;
 }
 
 a:hover {
-    color: blue;
+    color: navy;
 }
 
 a:active {
-    color: green;
+    color: darkslategrey;
+}
+
+tr {
+    vertical-align: bottom;  
+}
+
+th {
+    text-align: left;
+    font-family: sans-serif;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 4px 20px;
 }
 
 td {
-    
+    font-family: sans-serif;
+    font-weight: 100;
+    color: black;
+    font-size: 14px;
+    padding: 4px 30px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+tr:nth-child(2n) {
+    background-color: beige;
+}
+
+th:nth-child()
+
+span {
+    font-style: italic;
+    font-weight: 200;
+}
+
+table {
+    border-collapse: collapse;
+    border-bottom: 1px solid grey;
+}
+
+h1 {
+    display: block;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin: 60px 20px;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-top: -55px;
+    margin-left: 20px;
 }
