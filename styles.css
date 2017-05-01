@@ -8,6 +8,7 @@ li {
     display: inline;
 }
 
+/* Nav Bar */
 a:link {
     padding: 14px 30px;
     text-decoration: none;
@@ -30,10 +31,25 @@ a:active {
     color: darkslategrey;
 }
 
+h1 {
+    display: block;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin: 50px 20px;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-top: -45px;
+    margin-left: 20px;
+}
+
 tr {
     vertical-align: bottom;  
 }
 
+/* Table Headings */
 th {
     text-align: left;
     font-family: sans-serif;
@@ -43,6 +59,7 @@ th {
     padding: 4px 20px;
 }
 
+/*Table Data */
 td {
     font-family: sans-serif;
     font-weight: 100;
@@ -53,6 +70,7 @@ td {
     border-right: 1px solid grey;
 }
 
+/* Alternating Color */
 tr:nth-child(2n) {
     background-color: beige;
 }
@@ -69,18 +87,4 @@ table {
 
 tbody {
     border: 1px solid grey;
-}
-
-h1 {
-    display: block;
-    font-family: sans-serif;
-    font-weight: 500;
-    margin: 50px 20px;
-}
-
-h2 {
-    font-family: sans-serif;
-    font-weight: 100;
-    margin-top: -45px;
-    margin-left: 20px;
 }
