@@ -1,7 +1,9 @@
 <!doctype html>
 <html>
 <head>
-    <title>Contact</title>
+    <title>Hydro Flask Contact Page</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
 
 <body>
@@ -16,5 +18,73 @@
     </ul>
     <h1>Hydro Flask</h1>
     <h2>Contact Us!</h2>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>First and Last Name</legend>
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="First Name">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+            </fieldset>
+           
+            <fieldset>
+                <legend>Address</legend>
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Address">
+                <label for="state">State</label>
+                <select id="state" name="state">
+                    <option value="california">California</option>
+                </select>
+                <label for="zipcode">Zipcode</label>
+                <input type="text" id="zipcode" name="zipcode" placeholder="Zipcode">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Security Information</legend>
+                <label for="phonenumber">Phone Number</label>
+                <input type="text" id="phonenumber" name="phonenumber" placeholder="Phone Number">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="prefernot">Prefer Not to Specify</option>
+                </select>
+                <label for="colors">Favorite Colors</label>
+                <select multiple>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="grey">Grey</option>
+                    <option value="brown">Brown</option>
+                    <option value="red">Red</option>
+                    <option value="orange">Orange</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="purple">Purple</option>
+                    <option value="pink">Pink</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Credit Card Information</legend>
+                <label for="cardname">Cardholder's Name</label>
+                <input type="text" id="cardname" name="cardname"   placeholder="Cardholder's Name">
+                <label for="cardnumber">Card Number</label>
+                <input type="text" id="cardnumber" name="cardnumber" placeholder="Enter a 16-digit card number">
+                <label for="date">Expiration Date</label>
+                <input type="text" id="date" name="date" placeholder="MM / YY">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="cvv">
+                <img src="images/visa.gif" alt="visa">
+                <img src="images/american_express.gif" alt="americanexpress">
+                <img src="images/mastercard1979.gif" alt="mastercard">
+            </fieldset>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>

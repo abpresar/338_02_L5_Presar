@@ -13,7 +13,7 @@ a:link {
     padding: 14px 30px;
     text-decoration: none;
     color: dimgrey;
-    font-family: sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 100;
     font-size: 14px;
     border:none;
@@ -33,13 +33,13 @@ a:active {
 
 h1 {
     display: block;
-    font-family: sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
     margin: 50px 20px;
 }
 
 h2 {
-    font-family: sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 100;
     margin-top: -45px;
     margin-left: 20px;
@@ -52,7 +52,7 @@ tr {
 /* Table Headings */
 th {
     text-align: left;
-    font-family: sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: black;
     font-size: 14px;
     font-weight: 400;
@@ -61,7 +61,7 @@ th {
 
 /*Table Data */
 td {
-    font-family: sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 100;
     color: black;
     font-size: 14px;
