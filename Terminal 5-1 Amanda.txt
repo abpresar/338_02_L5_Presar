@@ -1,0 +1,346 @@
+Last login: Mon May  1 09:41:47 on ttys000
+grc-egypt:~ abpresar$ cd desktop
+grc-egypt:desktop abpresar$ cd 338_02_L5_Presar
+grc-egypt:338_02_L5_Presar abpresar$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .DS_Store
+	modified:   images/.DS_Store
+	modified:   images/LimeGreen.jpg
+	modified:   images/green.jpg
+	modified:   images/white.jpg
+	modified:   index.html
+	modified:   styles.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	images/Logo.gif
+	images/black.jpg
+
+no changes added to commit (use "git add" and/or "git commit -a")
+grc-egypt:338_02_L5_Presar abpresar$ git commit -am "add images"
+[master 341b82f] add images
+ 7 files changed, 109 insertions(+), 11 deletions(-)
+ rewrite images/LimeGreen.jpg (99%)
+ mode change 100755 => 100644
+ rewrite images/green.jpg (99%)
+ mode change 100755 => 100644
+ rewrite images/white.jpg (99%)
+ mode change 100755 => 100644
+grc-egypt:338_02_L5_Presar abpresar$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	images/Logo.gif
+	images/black.jpg
+
+nothing added to commit but untracked files present (use "git add" to track)
+grc-egypt:338_02_L5_Presar abpresar$ git add -A
+grc-egypt:338_02_L5_Presar abpresar$ git commit -m "add files"
+[master d9ea28c] add files
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 images/Logo.gif
+ create mode 100644 images/black.jpg
+grc-egypt:338_02_L5_Presar abpresar$ git log
+commit d9ea28c4e67096aa1ba66d8410bd0570f1cccfaa
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:28 2017 -0700
+
+    add files
+
+commit 341b82f96e2bbab142f8dda7e685faec522f5731
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:05 2017 -0700
+
+    add images
+
+commit aaeb8cc9a37749130c91a574a2e71e14105be2d3
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 09:45:43 2017 -0700
+
+    Add Files
+grc-egypt:338_02_L5_Presar abpresar$ git add -am "fixed table"
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod <(+/-)x>      override the executable bit of the listed files
+
+grc-egypt:338_02_L5_Presar abpresar$ git commit -m "fixed table"
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+	modified:   index.html
+	modified:   styles.css
+
+no changes added to commit
+grc-egypt:338_02_L5_Presar abpresar$ git add -A
+grc-egypt:338_02_L5_Presar abpresar$ git commit -m "stylized table"
+[master e352856] stylized table
+ 2 files changed, 8 insertions(+), 6 deletions(-)
+grc-egypt:338_02_L5_Presar abpresar$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+grc-egypt:338_02_L5_Presar abpresar$ git add -A
+grc-egypt:338_02_L5_Presar abpresar$ git commit -m "add comments"
+[master 60af1b3] add comments
+ 2 files changed, 23 insertions(+), 14 deletions(-)
+grc-egypt:338_02_L5_Presar abpresar$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+grc-egypt:338_02_L5_Presar abpresar$ git log
+commit 60af1b3b8b597a1ffec14b1d0d5ce28029fa33f2
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:30:56 2017 -0700
+
+    add comments
+
+commit e352856cec063b118ce8fba5c8ed4265f2d9cfc8
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:26:05 2017 -0700
+
+    stylized table
+
+commit d9ea28c4e67096aa1ba66d8410bd0570f1cccfaa
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:28 2017 -0700
+
+    add files
+
+commit 341b82f96e2bbab142f8dda7e685faec522f5731
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:05 2017 -0700
+
+    add images
+:...skipping...
+commit 60af1b3b8b597a1ffec14b1d0d5ce28029fa33f2
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:30:56 2017 -0700
+
+    add comments
+
+commit e352856cec063b118ce8fba5c8ed4265f2d9cfc8
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:26:05 2017 -0700
+
+    stylized table
+
+commit d9ea28c4e67096aa1ba66d8410bd0570f1cccfaa
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:28 2017 -0700
+
+    add files
+
+commit 341b82f96e2bbab142f8dda7e685faec522f5731
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:05 2017 -0700
+
+    add images
+
+:...skipping...
+commit 60af1b3b8b597a1ffec14b1d0d5ce28029fa33f2
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:30:56 2017 -0700
+
+    add comments
+
+commit e352856cec063b118ce8fba5c8ed4265f2d9cfc8
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:26:05 2017 -0700
+
+    stylized table
+
+commit d9ea28c4e67096aa1ba66d8410bd0570f1cccfaa
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:28 2017 -0700
+
+    add files
+
+commit 341b82f96e2bbab142f8dda7e685faec522f5731
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:05 2017 -0700
+
+    add images
+
+commit aaeb8cc9a37749130c91a574a2e71e14105be2d3
+:...skipping...
+commit 60af1b3b8b597a1ffec14b1d0d5ce28029fa33f2
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:30:56 2017 -0700
+
+    add comments
+
+commit e352856cec063b118ce8fba5c8ed4265f2d9cfc8
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:26:05 2017 -0700
+
+    stylized table
+
+commit d9ea28c4e67096aa1ba66d8410bd0570f1cccfaa
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:28 2017 -0700
+
+    add files
+
+commit 341b82f96e2bbab142f8dda7e685faec522f5731
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:05 2017 -0700
+
+    add images
+
+commit aaeb8cc9a37749130c91a574a2e71e14105be2d3
+Author: abpresar <abpresar@calpoly.edu>
+:...skipping...
+commit 60af1b3b8b597a1ffec14b1d0d5ce28029fa33f2
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:30:56 2017 -0700
+
+    add comments
+
+commit e352856cec063b118ce8fba5c8ed4265f2d9cfc8
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:26:05 2017 -0700
+
+    stylized table
+
+commit d9ea28c4e67096aa1ba66d8410bd0570f1cccfaa
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:28 2017 -0700
+
+    add files
+
+commit 341b82f96e2bbab142f8dda7e685faec522f5731
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:05 2017 -0700
+
+    add images
+
+commit aaeb8cc9a37749130c91a574a2e71e14105be2d3
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 09:45:43 2017 -0700
+:...skipping...
+commit 60af1b3b8b597a1ffec14b1d0d5ce28029fa33f2
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:30:56 2017 -0700
+
+    add comments
+
+commit e352856cec063b118ce8fba5c8ed4265f2d9cfc8
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:26:05 2017 -0700
+
+    stylized table
+
+commit d9ea28c4e67096aa1ba66d8410bd0570f1cccfaa
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:28 2017 -0700
+
+    add files
+
+commit 341b82f96e2bbab142f8dda7e685faec522f5731
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:05 2017 -0700
+
+    add images
+
+commit aaeb8cc9a37749130c91a574a2e71e14105be2d3
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 09:45:43 2017 -0700
+
+:...skipping...
+commit 60af1b3b8b597a1ffec14b1d0d5ce28029fa33f2
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:30:56 2017 -0700
+
+    add comments
+
+commit e352856cec063b118ce8fba5c8ed4265f2d9cfc8
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:26:05 2017 -0700
+
+    stylized table
+
+commit d9ea28c4e67096aa1ba66d8410bd0570f1cccfaa
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:28 2017 -0700
+
+    add files
+
+commit 341b82f96e2bbab142f8dda7e685faec522f5731
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:05 2017 -0700
+
+    add images
+
+commit aaeb8cc9a37749130c91a574a2e71e14105be2d3
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 09:45:43 2017 -0700
+
+    Add Files
+:...skipping...
+commit 60af1b3b8b597a1ffec14b1d0d5ce28029fa33f2
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:30:56 2017 -0700
+
+    add comments
+
+commit e352856cec063b118ce8fba5c8ed4265f2d9cfc8
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:26:05 2017 -0700
+
+    stylized table
+
+commit d9ea28c4e67096aa1ba66d8410bd0570f1cccfaa
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:28 2017 -0700
+
+    add files
+
+commit 341b82f96e2bbab142f8dda7e685faec522f5731
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 11:16:05 2017 -0700
+
+    add images
+
+commit aaeb8cc9a37749130c91a574a2e71e14105be2d3
+Author: abpresar <abpresar@calpoly.edu>
+Date:   Mon May 1 09:45:43 2017 -0700
+
+    Add Files
+~
+grc-egypt:338_02_L5_Presar abpresar$ git push
+Counting objects: 23, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (23/23), done.
+Writing objects: 100% (23/23), 40.28 KiB | 0 bytes/s, done.
+Total 23 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), completed with 2 local objects.
+To https://github.com/abpresar/338_02_L5_Presar.git
+   aaeb8cc..60af1b3  master -> master
+grc-egypt:338_02_L5_Presar abpresar$ 
