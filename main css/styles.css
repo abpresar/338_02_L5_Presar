@@ -88,3 +88,57 @@ table {
 tbody {
     border: 1px solid grey;
 }
+
+/*  Form  */
+legend {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: grey;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 5px;
+}
+
+fieldset {
+    margin: 20px 20px;
+    border-color: lightgrey;
+    border-width: thin;
+}
+
+label {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    font-size: 12px;
+    font-weight: 100;
+    padding: 0px 10px 0px 20px;
+}
+
+input {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: darkgrey;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+option {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: darkgrey;
+    font-size: 12px;
+    font-weight: 50;
+}
+
+.submit {
+    margin-left: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    background-color: lightgrey;
+    color: black;
+    padding: 10px 20px;
+    border-width: thin;
+    border-color: darkgrey;
+}
+
+.img {
+    display: block;
+    padding: 20px;
+    width: 200px;
+}
