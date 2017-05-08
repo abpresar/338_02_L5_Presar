@@ -126,6 +126,14 @@ option {
     font-weight: 50;
 }
 
+.dropdown {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: grey;
+    border-color: darkgrey;
+    font-size: 12px;
+    font-weight: 50;
+}
+
 .submit {
     margin-left: 20px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -141,4 +149,13 @@ option {
     display: block;
     padding: 20px;
     width: 200px;
+}
+
+.security {
+    padding-bottom: 40px;
+}
+
+.colors {
+    display: inline;
+    position: absolute;
 }

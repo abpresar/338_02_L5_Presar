@@ -33,27 +33,31 @@
                 <label for="address">Address:</label>
                 <input type="text" id="address" name="address" placeholder="Address">
                 <label for="state">State:</label>
-                <select id="state" name="state">
-                    <option value="california">CA</option>
+                <select id="state" name="state" class="dropdown">
+                    <option value="al">AL</option>
+                    <option value="ca">CA</option>
+                    <option value="texas">TX</option>
+                    <option value="wa">WA</option>
                 </select>
                 <label for="zipcode">Zipcode:</label>
                 <input type="text" id="zipcode" name="zipcode" placeholder="Zipcode">
             </fieldset>
             
-            <fieldset>
+            <fieldset class="security">
                 <legend>Security Information</legend>
                 <label for="phonenumber">Phone Number:</label>
                 <input type="text" id="phonenumber" name="phonenumber" placeholder="Phone Number">
                 <label for="email">Email:</label>
                 <input type="text" id="email" name="email" placeholder="Email">
                 <label for="gender">Gender:</label>
-                <select id="gender" name="gender">
+                <select id="gender" name="gender" class="dropdown">
                     <option value="female">Female</option>
                     <option value="male">Male</option>
                     <option value="prefernot">Prefer Not to Specify</option>
                 </select>
                 <label for="colors">Favorite Colors:</label>
-                <select multiple>
+                <div class="colors">
+                <select multiple name="colors" size="3">
                     <option value="black">Black</option>
                     <option value="white">White</option>
                     <option value="grey">Grey</option>
@@ -66,6 +70,7 @@
                     <option value="purple">Purple</option>
                     <option value="pink">Pink</option>
                 </select>
+                </div>
             </fieldset>
             
             <fieldset>
